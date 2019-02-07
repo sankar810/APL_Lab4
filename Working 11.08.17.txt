@@ -1,0 +1,9 @@
+1      program pgm
+2      CHARACTER F*128
+3      real x,y
+4      WRITE(*,*)'Enter the input file name'
+5      READ *, F 
+6      OPEN(1,FILE=F,STATUS='OLD',BLANK='NULL',ERR=3)
+7      read(1,*), x,y
+8      write(6,*),x,y
+9      end 
